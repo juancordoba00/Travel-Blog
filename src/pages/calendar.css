@@ -1,0 +1,91 @@
+
+@import 'react-datepicker/assets/styles/_mixin.scss';
+@import 'react-datepicker/assets/styles/app.scss';
+
+.picker {
+    width: 100%;
+    @media screen and (min-width: 769px) {
+        width: 327px;
+    }
+    & input {
+        width: 100%;
+        .__text {
+            color: #F8F8F8;
+            background: #3E3A47;
+            border-radius: 16px;
+            border: none;
+            font-family: 'LibreFranklin-Regular';
+            font-size: 16px;
+            height: 56px;
+            width: 100%;
+            padding-left: 16px !important;
+        }
+    }
+
+    .__container {
+        .calendar {
+            background: #3E3A47;
+            overflow: hidden;
+            border-radius: 16px;
+            & __item {
+                border: none;
+                overflow: hidden;
+                border-radius: 16px;
+                padding: 22px 24px 20px 28.5px;
+                @media screen and (min-width: 769px) {
+                    width: 327px;
+                }
+            }
+            &__head {
+                background: transparent;
+                padding-bottom: 2px;
+                &--title {
+                    color: #F8F8F8;
+                    font-family: 'LibreFranklin-Bold';
+                    line-height: 24px;
+                    margin-bottom: 0;
+                    margin-top: -6px;
+                }
+                &--button {
+                    background-image: url(../../../assets/images/arrow-green.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 24px;
+                    width: 24px;
+                    svg {
+                        display: none;
+                    }
+                }
+                &--prev {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &__body {
+                table {
+                    thead {
+                        tr {
+                            th {
+                                font-family: 'LibreFranklin-Bold';
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                font-family: 'LibreFranklin-Medium';
+                                &.calendar__day {
+                                    border-radius: 50%;
+                                    padding-top: 12px;
+                                    width: 38px !important;
+                                    height: 38.56px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
