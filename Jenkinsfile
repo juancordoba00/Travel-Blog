@@ -24,10 +24,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building..."
-                script{
+                /* script{
                     sh "npm install"
 					sh "gatsby build"
-                }
+                } */
             }
             /* post {
                 success {
