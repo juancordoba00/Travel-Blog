@@ -56,11 +56,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying..."
-                script{
+                /* script{
                     withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: "049606576112", accessKeyVariable: 'AKIAQXDGII7YLGDRSGNZ', secretKeyVariable: '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']]) {
 						sh 'aws s3 cp ./build s3://bucket-images-1/ --recursive'
 					}
-                }
+                } */
             }
         }
     }
