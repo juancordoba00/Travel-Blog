@@ -5,7 +5,6 @@ pipeline {
     /* environment {
   		PASS = credentials('registry-pass')
     } */
-
     stages {
 
         stage('INITIALIZE') {
@@ -16,19 +15,19 @@ pipeline {
         stage('GET_CODE') {
             steps {
 				echo "[EXEC] - Obtener codigo fuente desde repositorio Git"
-				script{	
+				/* script{	
 					checkout scm
-				}
+				} */
 				
             }
         }
         stage('Build') {
             steps {
                 echo "Building..."
-                script{
+                /* script{
                     sh "npm install"
 					sh "npm run build"
-                }
+                } */
             }
             /* post {
                 success {
