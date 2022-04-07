@@ -26,7 +26,7 @@ pipeline {
                 echo "Building..."
                 script{
                     sh "npm install"
-					sh "npm run build"
+					sh "gatsby build"
                 }
             }
             /* post {
