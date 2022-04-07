@@ -7,7 +7,7 @@ pipeline {
     } */
     stages {
 
-        stage('INITIALIZE') {
+        /* stage('INITIALIZE') {
             steps {
                 echo "Inicializando..."
             }
@@ -20,7 +20,7 @@ pipeline {
 				} */
 				
             }
-        }
+        } */
         stage('Build') {
             steps {
                 echo "Building..."
